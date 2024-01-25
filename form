@@ -1,0 +1,64 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<fieldset class="everything"><legend><h3>Student registration form</h3></legend>
+    <div class="container">
+    <form action="/submit_form" class="forms">
+        <label for="fname">First name</label>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname"><br>
+        <label for="eno">Enrollment number</label>
+        <input type="text" id="eno"><br>
+        <label>contact</label>
+        <input type="text"><br>
+        <label for="drone">course:</label>
+
+        <input type="radio" id="bca" name="drone" value="bca" checked />
+        <label for="bca">BCA</label>
+        <input type="radio" id="mca" name="drone" value="mca" />
+        <label for="mca">MCA</label>
+        <input type="radio" id="hehe" name="drone" value="hehe" />
+        <label for="mca">HEHE</label>
+        <fieldset><legend>Academic details</legend>
+        <label for="gstr">Graduation stream</label>
+
+        <input type="radio" id="bca" name="gstr" value="bca" checked />
+        <label for="bca">BA</label>
+        <input type="radio" id="bca" name="gstr" value="bca" checked />
+        <label for="bca">BCom</label>
+        <input type="radio" id="bca" name="gstr" value="bca" checked />
+        <label for="bca">BSc</label>
+        <input type="radio" id="bca" name="gstr" value="bca" checked />
+        <label for="bca">BCA</label>
+
+        </fieldset>
+        <fieldset><legend>Course interested</legend>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Cultural</label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> technical</label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Eco-social</label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Sports</label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        </fieldset>
+
+        <fieldset><legend>Fees</legend>
+        <label for="fname">Tution fee</label>
+        <input type="text" id="fname"><br>
+        <label for="lname">University fee</label>
+        <input type="text" id="lname"><br>
+        <label for="eno">Activity fee</label>
+        <input type="text" id="eno"><br>
+        <label for="eno">Total</label>
+        <input type="text" id="eno"><br>
+        </fieldset>
+
+        <input type="submit">
+        </form>
+        </fieldset>
+
+
+</body>
+</html>
