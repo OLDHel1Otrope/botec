@@ -11,7 +11,7 @@ typedef struct node {
 node * START=NULL;
 
 void push(char a){
-    node *temp=(node*)malloc(sizeof(node));
+    node temp=(node)malloc(sizeof(node));
     temp->symbol=a;
     temp->next=START;
     START=temp;
@@ -67,16 +67,17 @@ int main(){
                     printf("%c",pop());
                 }
                 pop();
-                //printf("%c",pop());
+                //printf("(%c)",pop());
             }
             else{
                 if(precedence(peek())<=precedence(str[i])){
                     push(str[i]);
                 }
                 else{
-                    while(precedence(str[i])>=precedence(peek())&&peek()!=0){
+                    while(precedence(str[i])>=precedence(peek())&&peek()!='!'&&peek()!='!'){
                         printf("%c",pop());
                     }
+                    push(str[i]);
                 }
             }
         }
@@ -84,5 +85,5 @@ int main(){
     while(peek()!='!'){
         printf("%c",pop());
     }
-    return 0;
+    return 0;
 }
